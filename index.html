@@ -1,113 +1,151 @@
-   <!DOCTYPE html>
-   <html lang="en">
-      <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title>MyFirstWebsite.com</title>
-      </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://favicon.io/favicon-converter/ -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyson Potter</title>
+    <link
+      rel="stylesheet"
+      href="../assets/font-awesome-4.7.0/css/font-awesome.min.css"
+      target="_blank"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <a href="#">
+        <img
+          src="images//Tyson.jpg"
+          alt="Tyson Potter Profile"
+          class="profile-pic"
+        />
+      </a>
+      <h1>
+        <strong>Hello everyone 👨‍💻, I'm Tyson Potter</strong>
+        <br />
+        <small>I'm a Software Engineer in Salt Lake City, Utah, USA</small>
+        <br />
+        <p>HTML5, CSS and JavaScript</p>
+      </h1>
+    </header>
+    <div id="main">
+      <section id="one">
+        <form
+          action="https://formspree.io/jaredpotter1@gmail.com"
+          method="POST"
+        >
+          <h2>Send me a message</h2>
 
-      <body>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="_replyto" placeholder="Email" />
+          <textarea name="message" placeholder="Message" rows="4"></textarea>
+          <br />
+          <button type="submit" class="submit-button">Send</button>
+        </form>
+        <ul>
+          <li>
+            <h3 class="fa fa-home">
+              <span>Salt Lake City, Utah, United States</span>
+            </h3>
+          </li>
+          <li>
+            <h3 class="fa fa-envelope-o">
+              <a
+                href="mailto:jaredpotter1@gmail.com?Subject=message from jaredpotter.dev"
+                ><span>3ds.tyson@gmail.com</span></a
+              >
+            </h3>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a
+            href="https://www.google.com/jaredpotter"
+            class="fa fa-twitter icon"
+          >
+            <span>
+              Twitter
+            </span>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>© tyson potter 2020</li>
+      </ul>
+    </footer>
+  </body>
+  <style>
+    a {
+      color: rgb(28, 187, 7);
+      text-decoration: none;
+    }
 
-            
+    a:hover {
+      color: crimson;
+    }
 
-               <div class = "center">
+    li {
+      list-style: none;
+    }
+    /* ~~~~~~~~~~~~~Header~~~~~~~~~~~~ */
 
+    .header {
+      background-color: darkgreen;
+      height: 100%;
+      text-align: right;
+      background-attachment: scroll, fixed;
+      background-image: url(images/overlay.png), url(images/Nature.jpg);
+      background-size: auto, auto 100%;
+      background-repeat: repeat, no-repeat;
+    }
 
-                     <center><h1 class="title-text"> 
-                        Welcome To My Website
-                     </h1></center>
+    .profile-pic {
+      width: 15em;
+      border: 10px solid purple;
+      margin: 30px;
+    }
 
-                  </div>
+    .header strong,
+    .header small,
+    .header p {
+      color: white;
+    }
 
+    /*~~~~~~~~~~~MAIN~~~~~~~~~~~~~~*/
 
-                  <aside>HiThis is a picute of a bear i like beras a whole bunch</aside>
-                  <div class = "YellowStone">
-                     <center><img src="./images/GrizzlyBear1.png" alt="GrizzlyBear"></center>
-                  
+    input,
+    textarea {
+      background-color: #f7f7f7;
+      border: solid, 2px transparent;
+      border-radius: 0.35em;
+      outline: 0;
+    }
 
-                  </div>
+    input:focus,
+    textarea:focus {
+      border-color: rgb(28, 187, 7);
+    }
 
-                     <nav class ="Links"><center>
-                           <br>
-                     <a href="projects.html">Projects</a> 
-                           <br>
-                           <br>
-                           <a href="./about-me.html ">About Me</a>
-                           <br>
-                           <br>
-                     <a href="contact-me.html">Contact Me</a>
-                        <br>
-                        <br>
-                  </center></nav>
-
-
-                  <Section class ="ManinText"> Game of as rest time eyes with of this it. Add was music merry any truth since going. Happiness she ham but instantly put departure propriety. She amiable all without say spirits shy clothes morning. Frankness
-                        in extensive to belonging improving so certainty. Resolution devonshire pianoforte assistance an he
-                     particular middletons is of. Explain ten man uncivil engaged conduct. Am likewise betrayed as declared absolute do. Taste oh spoke about no solid of hills up shade. Occasion so bachelor humoured striking by attended </Section>
-
-
-                  <div class ="Footer"
-                     <div style="position: relative">
-                        <footer style="position: fixed; bottom: 0; width:100%; text-align: center"> 
-                           Copyright © 2020 my-first-website.com . All Rights Reserved
-                        </footer>
-                        </div>
-                  </div>
-
-      <form>
-         <h3>Registration Form</h3>
-      <label>FirstName:
-         <input type = "text">
-      </label> 
-      <br>
-      <br>
-      <label>
-      LastName :
-      <input type = "text">
-      </label> 
-
-
-      <label>
-      Date of Birth
-      <input type ="date">
-      </label>
-
-      <label>
-      Favorite Number
-      <input type ="number">
-      </label>
-
-      <label>
-         State:
-
-         <select>
-            <option value =""></option>
-            <option value ="UT">Utah</option>
-            <option value ="ID">Idaho</option>
-
-         </select>
-      </label>
-      <br>
-      <div>Sex:</div>
-      <label>
-         Male
-         <input type ="radio" name ="sex" value ="male">
-        
-      </label>
-<br>
-      <label>
-         Female
-         <input type ="radio" name ="sex" value ="Female"></label>
-         <br>
-      <button>Submit</button>
-      </form>
-
-         </body>
-               <link rel="stylesheet" href="./style.css">
-               <script src="./index.js"></script>
-
+    .submit-button {
+      cursor: pointer;
+      background-color: white;
+      color: #787878;
+      border-radius: 0.35em;
+      border: solid #787878;
+      transition: backround-color 0.2s ease-in-out, color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+      box-shadow: none;
+      height: 3.15em;
+      min-width: 10em;
+      font-size: 16pt;
+    }
+    .submit-button:hover {
+      border: solid green;
+      color: green;
+    }
+  </style>
 </html>
-
-
-
-
