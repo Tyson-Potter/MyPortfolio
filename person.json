@@ -1,0 +1,14 @@
+{
+  "firstName": "Joe",
+  "lasttName": "Doe",
+  "email": "Rockstar.gmail.com",
+  "age": 79,
+  "hoobies": [],
+  "address:": {
+    "lineOne": "3903s s 09767 w",
+    "lineTwo": "APT 17",
+    "zip": "84944",
+    "city": "New York City",
+    "state": "New York "
+  }
+}
