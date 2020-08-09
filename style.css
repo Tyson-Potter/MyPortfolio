@@ -1,10 +1,13 @@
-.title-text {
-    color:orangered;
+.item {
+  color: red;
 }
 
-.Footer{
-    color: red;
+.item:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+}
 
-
-
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
 }

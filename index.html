@@ -1,151 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- https://favicon.io/favicon-converter/ -->
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tyson Potter</title>
-    <link
-      rel="stylesheet"
-      href="../assets/font-awesome-4.7.0/css/font-awesome.min.css"
-      target="_blank"
-    />
+    <title>Todolist</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="header" class="header">
-      <a href="#">
-        <img
-          src="images//Tyson.jpg"
-          alt="Tyson Potter Profile"
-          class="profile-pic"
-        />
-      </a>
-      <h1>
-        <strong>Hello everyone 👨‍💻, I'm Tyson Potter</strong>
-        <br />
-        <small>I'm a Software Engineer in Salt Lake City, Utah, USA</small>
-        <br />
-        <p>HTML5, CSS and JavaScript</p>
-      </h1>
-    </header>
-    <div id="main">
-      <section id="one">
-        <form
-          action="https://formspree.io/jaredpotter1@gmail.com"
-          method="POST"
-        >
-          <h2>Send me a message</h2>
+    <h1>My First ToDo List</h1>
+    <label> Item To Add: <input type="text" id="inputField" /></label>
+    <button id="addButton" class="addButton">Add Item To List</button>
 
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="_replyto" placeholder="Email" />
-          <textarea name="message" placeholder="Message" rows="4"></textarea>
-          <br />
-          <button type="submit" class="submit-button">Send</button>
-        </form>
-        <ul>
-          <li>
-            <h3 class="fa fa-home">
-              <span>Salt Lake City, Utah, United States</span>
-            </h3>
-          </li>
-          <li>
-            <h3 class="fa fa-envelope-o">
-              <a
-                href="mailto:jaredpotter1@gmail.com?Subject=message from jaredpotter.dev"
-                ><span>3ds.tyson@gmail.com</span></a
-              >
-            </h3>
-          </li>
-        </ul>
-      </section>
+    <h3>TO DOS</h3>
+    <div class id="Divlist">
+      <ul id="list" class="list">
+        <li>Do Laundry</li>
+      </ul>
     </div>
-    <footer>
-      <ul>
-        <li>
-          <a
-            href="https://www.google.com/jaredpotter"
-            class="fa fa-twitter icon"
-          >
-            <span>
-              Twitter
-            </span>
-          </a>
-        </li>
-      </ul>
-      <ul>
-        <li>© tyson potter 2020</li>
-      </ul>
-    </footer>
   </body>
-  <style>
-    a {
-      color: rgb(28, 187, 7);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: crimson;
-    }
-
-    li {
-      list-style: none;
-    }
-    /* ~~~~~~~~~~~~~Header~~~~~~~~~~~~ */
-
-    .header {
-      background-color: darkgreen;
-      height: 100%;
-      text-align: right;
-      background-attachment: scroll, fixed;
-      background-image: url(images/overlay.png), url(images/Nature.jpg);
-      background-size: auto, auto 100%;
-      background-repeat: repeat, no-repeat;
-    }
-
-    .profile-pic {
-      width: 15em;
-      border: 10px solid purple;
-      margin: 30px;
-    }
-
-    .header strong,
-    .header small,
-    .header p {
-      color: white;
-    }
-
-    /*~~~~~~~~~~~MAIN~~~~~~~~~~~~~~*/
-
-    input,
-    textarea {
-      background-color: #f7f7f7;
-      border: solid, 2px transparent;
-      border-radius: 0.35em;
-      outline: 0;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: rgb(28, 187, 7);
-    }
-
-    .submit-button {
-      cursor: pointer;
-      background-color: white;
-      color: #787878;
-      border-radius: 0.35em;
-      border: solid #787878;
-      transition: backround-color 0.2s ease-in-out, color 0.2s ease-in-out,
-        border-color 0.2s ease-in-out;
-      box-shadow: none;
-      height: 3.15em;
-      min-width: 10em;
-      font-size: 16pt;
-    }
-    .submit-button:hover {
-      border: solid green;
-      color: green;
-    }
-  </style>
+  <script src="./index.js"></script>
 </html>
